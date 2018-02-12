@@ -1,6 +1,6 @@
 # 100 days UI
 
-虽然这都8102年了，但是在dribble上看到这个15年的项目还是肥肠兴奋，拿来练手再适合不过
+虽然这都8102年了，但是在dribbble上看到这个15年的项目还是肥肠兴奋，拿来练手再适合不过
 
 详情：https://dribbble.com/NpaulFlavius/projects/293744-Daily-UI-Elements-for-100-days
 
