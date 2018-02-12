@@ -5,13 +5,16 @@ body {
     margin: 0;
     background: #2d3969;
     background-image: url("http://p3zihuryc.bkt.clouddn.com/001/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
     position: relative;
     height: 100%;
-    margin: 0 63px;
+    margin: 0 11%;
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,28 +22,123 @@ body {
 
 .sign-header {
     margin-top: 94px;
+    padding: 0 20px;
 }
 
 .sign-header .toggle-btn {
     font-size: 20px;
+    font-weight: 500;
     color: #9395a0;
     text-decoration: none;
     margin-right: 46px;
+    line-height: 20px;
 }
 .sign-header .toggle-btn:last-child {
     margin-right: 0;
 }
 .sign-header .toggle-btn.actived {
     color: #fff;
-    border-bottom: 2px solid #1161bd;
+    border-bottom: 2px solid #1161ed;
 }
 
 .signin-content {
-    flex-grow: 1;
+    margin-top: 97px;
+}
+.signin-content .input-container {
+    margin-bottom: 20px;
+}
+.signin-content .input-container .input-name {
+    display: block;
+    padding: 0 20px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #8c8d9a;
+    margin-bottom: 15px;
+}
+.signin-content .input-container .input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 20px;
+    border: 2px solid #8f92a7;
+    background-color: transparent;
+    font-size: 14px;
+    color: #fff;
+}
+.signin-content .input-container .input.password {
+    border: 2px solid transparent;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.signin-content .keep_sign_in-container {
+    padding: 0 20px;
+    font-size: 0;
+    margin-bottom: 30px;
+}
+.signin-content .keep_sign_in-container input {
+    display: none;
+}
+.signin-content .keep_sign_in-container .checkbox {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 11px;
+    border-radius: 2px;
+    vertical-align: middle;
+    background: rgba(255, 255, 255, 0.1);
+}
+.signin-content .keep_sign_in-container .checkbox .checkmark {
+    display: none;
+}
+.signin-content .keep_sign_in-container input:checked~.checkbox {
+    background: #1161ed;
+}
+.signin-content .keep_sign_in-container input:checked~.checkbox .checkmark {
+    display: inline-block;
+    position: absolute;
+    margin-left: 4px;
+    margin-top: 5px;
+}
+.signin-content .keep_sign_in-container .text {
+    color: #fff;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.signin-content .keep_sign_in-container input:checked~.text {
+    font-weight: 500;
+}
+.signin-content .sign-btn {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    background: #1161ed;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.signin-content .sign-btn:hover {
+    background-color: rgb(64, 130, 245);
+    box-shadow: 0px 10px 40px 0px rgba(17, 97, 237, 0.4);
 }
 
 .sign-footer {
     position: absolute;
     width: 100%;
     height: 112px;
+    bottom: 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-footer .footer-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+    font-weight: 500;
 }

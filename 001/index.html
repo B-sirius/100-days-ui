@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <header class="sign-header">
             <a href="javascript:" class="toggle-btn actived">SIGN IN</a>
-            <a href="javascript:" class="toggle-btn">SIGN UP</a>        
+            <a href="javascript:" class="toggle-btn">SIGN UP</a>
         </header>
         <div class="signin-content">
-    
+            <div class="input-container">
+                <span class="input-name">USERNAME</span>
+                <input class="input username" type="text">
+            </div>
+            <div class="input-container">
+                <span class="input-name">PASSWORD</span>
+                <input class="input password" type="password">
+            </div>
+            <div class="keep_sign_in-container">
+                <input id="keepSignedIn" type="checkbox">
+                <label class="checkbox" for="keepSignedIn">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8px" height="6px">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M8.005,1.004 L3.003,6.007 L0.002,3.005 L1.002,2.004 L3.003,4.006 L7.005,0.003 L8.005,1.004 Z"
+                        />
+                    </svg>
+                </label>
+                <span CLASS="text">Keep me Signed in</span>
+            </div>
+            <a href="javascript:" class="sign-btn">SIGN IN</a>
         </div>
         <footer class="sign-footer">
-    
+            <a href="#" class="footer-link">Forgot Password?</a>
         </footer>
     </div>
 </body>
+
 </html>
