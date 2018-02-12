@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;    
+}
+
+.content {
+    min-height: 100vh;
+    background: url('http://p3zihuryc.bkt.clouddn.com/002/d002-bg.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: #fff;
+    padding: 20px 0 0 20px;
+}
+
+.back-btn {
+    position: absolute;
+    display: inline-block;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background-position: 10px 10px;
+}
+
+.back-btn::before {
+    content: '';
+    position: absolute;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 50px solid #d6d75b;
+}
+
+.back-btn .arrow-icon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.card-content {
+    margin: 44px 0 0 44px;
+    display: flex;
+}
+
+.card-content .left {
+    width: 300px;
+    margin-right: 80px;
+}
+
+.card-content .left .name {
+    margin: 0;
+    margin-bottom: 17px;
+}
+
+.card-content .left .name .bold {
+    display: block;
+    color: #232e3a;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 64px;
+    margin-bottom: 17px;
+}
+
+.card-content .left .name .light {
+    display: block;
+    color: #999999;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 28px;
+}
+
+.card-content .left .price {
+    font-size: 30px;
+    font-weight: 300;
+    color: #3e464f;
+    margin: 0;
+}
+
+.card-content .left .image-container .image {
+    width: 100%;
+    margin-left: -20px;
+}
+
+.card-content .right {
+    width: 280px;
+    padding-right: 60px
+}
+
+.card-content .right .description {
+    margin: 0 0 25px 0;
+    font-size: 16px;
+    color: #999999;
+}
+
+.card-content .right .stock {
+    display: block;
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 40px;
+}
+
+.card-content .right .stock .link {
+    text-decoration: none;
+    color: #3399ff;
+}
+
+.card-content .right .rating-container {
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.card-content .right .rating-container .star-container {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 8px;
+}
+
+.card-content .right .rating-container .star-container .star {
+    width: 16px;
+    height: 16px;
+    background: url('http://p3zihuryc.bkt.clouddn.com/002/d002-rating.png');
+    background-position: 0 0;
+}
+
+.card-content .right .rating-container .star-container .star.dark {
+    background-position: 16px 0;
+}
+
+.card-content .right .rating-container .rating-num {
+    color: #999999;
+}
+
+.card-content .right .quantity-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.card-content .right .quantity-container .text {
+    color: #333333;
+}
+.card-content .right .quantity-container .controler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 160px;
+}
+.card-content .right .quantity-container .controler .btn {
+    width: 18px;
+    height: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('http://p3zihuryc.bkt.clouddn.com/002/d002-controls.png');
+}
+.card-content .right .quantity-container .controler .btn.add {
+    transform: rotate(180deg);
+}
+.card-content .right .quantity-container .controler .quantity-num {
+    font-size: 30px;
+    color: #999999;
+}
+
+.card-footer {
+    margin-left: 44px;
+    border-top: 1px solid #d8d8d8;
+    height: 99px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-footer .totalprice-container .text {
+    display: block;
+    font-size: 14px;
+}
+.card-footer .totalprice-container .totalprice {
+    display: block;
+    font-size: 30px;
+    color: #bcbd31;
+}
+.card-footer .add_to_cart-btn {
+    display: inline-block;
+    font-size: 30px;
+    color: #bcbd31;
+    margin-right: 60px;
+    text-decoration: none;
+}
