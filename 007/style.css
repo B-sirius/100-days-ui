@@ -38,8 +38,13 @@ body {
 }
 
 .pic-container .pic {
+    position: absolute;
     width: 100%;
     height: 100%;
+}
+
+.pic-container .pic.hidden {
+    opacity: 0;
 }
 
 .pic-container .quote-icon {
@@ -72,16 +77,17 @@ body {
     transform: rotate(180deg);
     margin-left: 45px;
 }
+
 .pic-container:hover .arrow-container .btn.next {
     margin-left: 20px;
-} 
+}
 
 .pic-container .arrow-container .btn:hover {
-    opacity: 1;    
+    opacity: 1;
 }
 
 .quote-container {
-    position: relative;    
+    position: relative;
     flex-grow: 1;
     background: #18a0ff;
     overflow: hidden;
@@ -97,36 +103,24 @@ body {
     position: absolute;
     width: 100%;
 }
+
 .quote-container .quote-text-container .quote.curr {
     left: 0;
     top: 0;
 }
+
 .quote-container .quote-text-container .quote.hidden {
     left: 100%;
     top: 0;
     opacity: 0;
 }
+
 .quote-container .quote-text-container .quote.fadeout {
-    animation: fadeout 0.5s 1s forwards; 
+    animation: fadeout 0.5s forwards;
 }
+
 .quote-container .quote-text-container .quote.slidein {
-    animation: slidein 0.5s 1s forwards; 
-    
-}
-@keyframes fadeout {
-    100% {
-        opacity: 0;        
-    }
-}
-@keyframes slidein {
-    0% {
-        transform: translate3d(0%, 0, 0);
-        opacity: 0;
-    }
-    100% {
-        transform: translate3d(-100%, 0, 0);
-        opacity: 1;        
-    }
+    animation: slidein 0.5s forwards;
 }
 
 .quote-container .quote-text-container .text {
@@ -151,6 +145,7 @@ body {
     font-size: 14px;
     font-weight: 700;
 }
+
 .quote-container .like-container {
     position: absolute;
     top: 20px;
@@ -160,17 +155,82 @@ body {
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.1);
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
+
 .quote-container .like-container .like-icon {
+    position: absolute;
+    top: 9px;
+    left: 11px;
     width: 16px;
     height: 14px;
     margin-right: 8px;
 }
+
 .quote-container .like-container .like-num {
+    position: absolute;
     color: #fff;
+    top: 7px;
+    right: 11px;
     font-size: 12px;
     font-weight: 700;
     font-family: sans-serif;
+}
+
+.quote-container .like-container .like-num.hidden {
+    opacity: 0;
+}
+
+.quote-container .quotemask {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.quote-container .quotemask.toggleMask {
+    animation: 0.5s toggleQuoteMask forwards;
+}
+
+.fadeout {
+    animation: fadeout 0.5s forwards;
+}
+
+.fadein {
+    animation: fadein 0.5s forwards;
+}
+
+@keyframes fadeout {
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        transform: translate3d(0%, 0, 0);
+        opacity: 0;
+    }
+    100% {
+        transform: translate3d(-100%, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes toggleQuoteMask {
+    0% {
+        background: rgba(0, 0, 0, 0);
+    }
+    35% {
+        background: rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        background: rgba(0, 0, 0, 0);
+    }
 }
