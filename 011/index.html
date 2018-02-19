@@ -1,33 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.cnpmjs.org/css?family=Lora:700|Roboto:400" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <div class="calendar">
-            <div class="calendar-bg"></div>
-            <ul class="month-container" id="js-months">
-                <li class="month-btn js-month-btn"><a href="javascript:" datavalue="1">JAN</a></li>
-                <li class="month-btn js-month-btn"><a href="javascript:" datavalue="2">FEB</a></li>
-                <li class="month-btn js-month-btn"><a href="javascript:" datavalue="3">MAR</a></li>
-                <li class="month-btn js-month-btn"><a href="javascript:" datavalue="4">APR</a></li>
-                <li class="month-btn js-month-btn"><a href="javascript:" datavalue="5">MAY</a></li>
-                <li class="month-btn js-month-btn"><a href="javascript:" datavalue="6">JUN</a></li>
-                <li class="month-btn js-month-btn"><a href="javascript:" datavalue="7">JUL</a></li>
-                <li class="month-btn js-month-btn"><a href="javascript:" datavalue="8">AUG</a></li>
-                <li class="month-btn js-month-btn"><a href="javascript:" datavalue="9">SPT</a></li>
-                <li class="month-btn js-month-btn"><a href="javascript:" datavalue="10">OCT</a></li>
-                <li class="month-btn js-month-btn"><a href="javascript:" datavalue="11">NOV</a></li>
-                <li class="month-btn js-month-btn"><a href="javascript:" datavalue="12">DEC</a></li>
+        <div class="watch">
+            <div class="center">
+                <div class="watch-outer_bg"></div>
+                <div class="watch-inner_bg"></div>
+            </div>
+            <ul class="center-container" id="js-hours">
+                <li class="hour-btn js-hour-btn">
+                    <a href="javascript:" datavalue="1">1</a>
+                </li>
+                <li class="hour-btn js-hour-btn">
+                    <a href="javascript:" datavalue="2">2</a>
+                </li>
+                <li class="hour-btn js-hour-btn">
+                    <a href="javascript:" datavalue="3">3</a>
+                </li>
+                <li class="hour-btn js-hour-btn">
+                    <a href="javascript:" datavalue="4">4</a>
+                </li>
+                <li class="hour-btn js-hour-btn">
+                    <a href="javascript:" datavalue="5">5</a>
+                </li>
+                <li class="hour-btn js-hour-btn">
+                    <a href="javascript:" datavalue="6">6</a>
+                </li>
+                <li class="hour-btn js-hour-btn">
+                    <a href="javascript:" datavalue="7">7</a>
+                </li>
+                <li class="hour-btn js-hour-btn">
+                    <a href="javascript:" datavalue="8">8</a>
+                </li>
+                <li class="hour-btn js-hour-btn">
+                    <a href="javascript:" datavalue="9">9</a>
+                </li>
+                <li class="hour-btn js-hour-btn">
+                    <a href="javascript:" datavalue="10">10</a>
+                </li>
+                <li class="hour-btn js-hour-btn">
+                    <a href="javascript:" datavalue="11">11</a>
+                </li>
+                <li class="hour-btn js-hour-btn">
+                    <a href="javascript:" datavalue="12">12</a>
+                </li>
             </ul>
+            <ul class="center-container" id="js-minute">
+                <li class="minute-btn js-minute-btn">
+                    <a href="javascript:" datavalue="0">0</a>
+                </li>
+                <li class="minute-btn js-minute-btn">
+                    <a href="javascript:" datavalue="5">5</a>
+                </li>
+                <li class="minute-btn js-minute-btn">
+                    <a href="javascript:" datavalue="10">10</a>
+                </li>
+                <li class="minute-btn js-minute-btn">
+                    <a href="javascript:" datavalue="15">15</a>
+                </li>
+                <li class="minute-btn js-minute-btn">
+                    <a href="javascript:" datavalue="20">20</a>
+                </li>
+                <li class="minute-btn js-minute-btn">
+                    <a href="javascript:" datavalue="25">25</a>
+                </li>
+                <li class="minute-btn js-minute-btn">
+                    <a href="javascript:" datavalue="30">30</a>
+                </li>
+                <li class="minute-btn js-minute-btn">
+                    <a href="javascript:" datavalue="35">35</a>
+                </li>
+                <li class="minute-btn js-minute-btn">
+                    <a href="javascript:" datavalue="40">40</a>
+                </li>
+                <li class="minute-btn js-minute-btn">
+                    <a href="javascript:" datavalue="45">45</a>
+                </li>
+                <li class="minute-btn js-minute-btn">
+                    <a href="javascript:" datavalue="50">50</a>
+                </li>
+                <li class="minute-btn js-minute-btn">
+                    <a href="javascript:" datavalue="55">55</a>
+                </li>
+            </ul>
+            <div class="focus"></div>
+            <div class="time-container">
+                
+            </div>
         </div>
     </div>
 
-    <script src="calendar.js"></script>
+    <script src="watch.js"></script>
 </body>
+
 </html>
