@@ -36,7 +36,7 @@ body {
     width: 700px;
     height: 700px;
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.85);
 }
 
 .center .watch-inner_bg {
@@ -107,6 +107,7 @@ body {
     border-radius: 50%;
     overflow: hidden;
 }
+
 .watch .focus::after {
     content: '';
     position: absolute;
@@ -118,6 +119,7 @@ body {
     border-color: #ead34f transparent transparent transparent;
     filter: drop-shadow(0px 10px 40px #ead34f71);
 }
+
 .watch .focus::before {
     content: '';
     position: absolute;
@@ -138,4 +140,24 @@ body {
     transform: translate(-50%, -50%);
     border-radius: 50%;
     border: 2px solid rgba(234, 211, 79, 0.6);
+}
+
+.watch .curr-hour {
+    font-family: 'Lora', serif;    
+    position: absolute;
+    left: 50%;
+    top: 63px;
+    color: #000;
+    font-size: 36px;
+    transform: translate(-50%, -50%);
+}
+
+.watch .curr-minute {
+    font-family: 'Lora', serif;    
+    position: absolute;
+    left: 50%;
+    top: 154px;
+    color: #000;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
 }
